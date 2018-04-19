@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
     res.render('index.ejs');
 });
 app.post('/login', function(req, res) {
-    res.render('login.ejs', {nom: req.params.firstname});
+    res.render('login.ejs', {nom: req.body.firstname});
     console.log('firstname = ' + req.body.firstname + ' ; lastname = ' + req.body.lastname);
 });
 
